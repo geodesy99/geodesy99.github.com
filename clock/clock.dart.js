@@ -1221,9 +1221,9 @@ $$.CountDownClock = {"":
   $.makeRelative(root);
   root.get$style().set$textAlign('center');
   $.add$1($.query('#canvas-content').get$nodes(), root);
-  var x = $.div($.sub(width, 367.0), 2);
+  var x = $.div($.sub(width, 748.0), 2);
   if (typeof x !== 'number') return this.createNumbers$3$bailout(1, height, x, root);
-  var y = $.div($.sub(height, 63.0), 3);
+  var y = $.div($.sub(height, 175.0), 3);
   if (typeof y !== 'number') return this.createNumbers$3$bailout(2, y, x, root);
   for (var t1 = this.hours, i = 0; i < t1.length; ++i) {
     var t2 = $.ClockNumber$(this, x, 2);
@@ -1237,10 +1237,10 @@ $$.CountDownClock = {"":
     t2 = t1.length;
     if (i < 0 || i >= t2) throw $.ioore(i);
     $.setElementPosition(t1[i].get$root(), x, y);
-    x += 55.0;
+    x += 114.0;
   }
   $.add$1(root.get$nodes(), $.Colon$(x, y).root);
-  x += 28.0;
+  x += 39.0;
   for (t1 = this.minutes, i = 0; i < t1.length; ++i) {
     t2 = $.ClockNumber$(this, x, 5);
     t3 = t1.length;
@@ -1253,10 +1253,10 @@ $$.CountDownClock = {"":
     t2 = t1.length;
     if (i < 0 || i >= t2) throw $.ioore(i);
     $.setElementPosition(t1[i].get$root(), x, y);
-    x += 55.0;
+    x += 114.0;
   }
   $.add$1(root.get$nodes(), $.Colon$(x, y).root);
-  x += 28.0;
+  x += 39.0;
   for (t1 = this.seconds, i = 0; i < t1.length; ++i) {
     t2 = $.ClockNumber$(this, x, 1);
     t3 = t1.length;
@@ -1269,7 +1269,7 @@ $$.CountDownClock = {"":
     t2 = t1.length;
     if (i < 0 || i >= t2) throw $.ioore(i);
     $.setElementPosition(t1[i].get$root(), x, y);
-    x += 55.0;
+    x += 114.0;
   }
  },
  createNumbers$3$bailout: function(state, env0, env1, env2) {
@@ -1291,10 +1291,10 @@ $$.CountDownClock = {"":
       $.makeRelative(root);
       root.get$style().set$textAlign('center');
       $.add$1($.query('#canvas-content').get$nodes(), root);
-      var x = $.div($.sub(width, 367.0), 2);
+      var x = $.div($.sub(width, 748.0), 2);
     case 1:
       state = 0;
-      var y = $.div($.sub(height, 63.0), 3);
+      var y = $.div($.sub(height, 175.0), 3);
     case 2:
       state = 0;
       for (var t1 = this.hours, i = 0; i < t1.length; ++i) {
@@ -1309,10 +1309,10 @@ $$.CountDownClock = {"":
         t2 = t1.length;
         if (i < 0 || i >= t2) throw $.ioore(i);
         $.setElementPosition(t1[i].get$root(), x, y);
-        x = $.add(x, 55.0);
+        x = $.add(x, 114.0);
       }
       $.add$1(root.get$nodes(), $.Colon$(x, y).root);
-      x = $.add(x, 28.0);
+      x = $.add(x, 39.0);
       for (t1 = this.minutes, i = 0; i < t1.length; ++i) {
         t2 = $.ClockNumber$(this, x, 5);
         t3 = t1.length;
@@ -1325,10 +1325,10 @@ $$.CountDownClock = {"":
         t2 = t1.length;
         if (i < 0 || i >= t2) throw $.ioore(i);
         $.setElementPosition(t1[i].get$root(), x, y);
-        x = $.add(x, 55.0);
+        x = $.add(x, 114.0);
       }
       $.add$1(root.get$nodes(), $.Colon$(x, y).root);
-      x = $.add(x, 28.0);
+      x = $.add(x, 39.0);
       for (t1 = this.seconds, i = 0; i < t1.length; ++i) {
         t2 = $.ClockNumber$(this, x, 1);
         t3 = t1.length;
@@ -1341,7 +1341,7 @@ $$.CountDownClock = {"":
         t2 = t1.length;
         if (i < 0 || i >= t2) throw $.ioore(i);
         $.setElementPosition(t1[i].get$root(), x, y);
-        x = $.add(x, 55.0);
+        x = $.add(x, 114.0);
       }
   }
  },
@@ -1449,7 +1449,7 @@ $$.Ball = {"":
   this.y = t5 + t6 * delta;
   t1 = this.x;
   if (typeof t1 !== 'number') return this.tick$1$bailout(8, t1, 0, 0);
-  if (!(t1 < 14.0)) {
+  if (!(t1 < 37.0)) {
     t2 = $.clientWidth();
     if (typeof t2 !== 'number') return this.tick$1$bailout(10, t2, t1, 0);
     t2 = t1 > t2;
@@ -1469,7 +1469,7 @@ $$.Ball = {"":
     if (typeof t1 !== 'number') return this.tick$1$bailout(13, t1, 0, 0);
     this.vy = t1 * -0.8;
   }
-  $.setElementPosition(this.elem, this.x - 14.0, this.y - 14.0);
+  $.setElementPosition(this.elem, this.x - 37.0, this.y - 37.0);
   return true;
  },
  tick$1$bailout: function(state, env0, env1, env2) {
@@ -1559,7 +1559,7 @@ $$.Ball = {"":
       state = 0;
     case 9:
     case 10:
-      if (state == 9 || state == 10 || (state == 0 && !$.ltB(t1, 14.0))) {
+      if (state == 9 || state == 10 || (state == 0 && !$.ltB(t1, 37.0))) {
         switch (state) {
           case 0:
             t1 = this.x;
@@ -1595,7 +1595,7 @@ $$.Ball = {"":
             this.vy = $.mul(t1, -0.8);
         }
       }
-      $.setElementPosition(this.elem, this.x - 14.0, this.y - 14.0);
+      $.setElementPosition(this.elem, this.x - 37.0, this.y - 37.0);
       return true;
   }
  },
@@ -1862,7 +1862,7 @@ $$.ClockNumber = {"":
     t2[y] = t3;
   }
   for (y = 0; y < 7; ++y) {
-    for (t3 = y * 9.0, x = 0; x < 4; ++x) {
+    for (t3 = y * 25.0, x = 0; x < 4; ++x) {
       t4 = t2.length;
       if (y < 0 || y >= t4) throw $.ioore(y);
       $.indexSet(t2[y], x, $._Elements_ImageElement(null, null, null));
@@ -1875,7 +1875,7 @@ $$.ClockNumber = {"":
       $.makeAbsolute($.index(t2[y], x));
       var t7 = t2.length;
       if (y < 0 || y >= t7) throw $.ioore(y);
-      $.setElementPosition($.index(t2[y], x), x * 9.0, t3);
+      $.setElementPosition($.index(t2[y], x), x * 25.0, t3);
     }
   }
   var x;
@@ -1895,13 +1895,13 @@ $$.Colon = {"":
   var dot = $._Elements_ImageElement($.CTC20[4], null, null);
   $.add$1(t1.get$nodes(), dot);
   $.makeAbsolute(dot);
-  $.setElementPosition(dot, 0.0, 18.0);
+  $.setElementPosition(dot, 0.0, 50.0);
   var t3 = $.CTC20.length;
   if (4 < 0 || 4 >= t3) throw $.ioore(4);
   dot = $._Elements_ImageElement($.CTC20[4], null, null);
   $.add$1(t1.get$nodes(), dot);
   $.makeAbsolute(dot);
-  $.setElementPosition(dot, 0.0, 36.0);
+  $.setElementPosition(dot, 0.0, 100.0);
  }
 };
 
@@ -2940,7 +2940,7 @@ $$.Balls_collideBalls_anon0 = {"":
   var dx = $.abs($.sub(this.b0_2.get$x(), b1.get$x()));
   var dy = $.abs($.sub(this.b0_2.get$y(), b1.get$y()));
   var d2 = $.add($.mul(dx, dx), $.mul(dy, dy));
-  if ($.ltB(d2, 196.0)) {
+  if ($.ltB(d2, 1369.0)) {
     if ($.gtB(this.this_4.newDistanceSquared$3(this.delta_3, this.b0_2, b1), d2)) return;
     var d = $.Math_sqrt(d2);
     if ($.eqB(d, 0)) return;
@@ -5031,7 +5031,7 @@ $.CTC6 = Isolate.makeConstantList([1, 0, 0, 1]);
 $.CTC9 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8]);
 $.CTC7 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC5]);
 $.CTC10 = Isolate.makeConstantList([1, 0, 0, 0]);
-$.CTC20 = Isolate.makeConstantList(['images/ball-d9d9d9.png', 'images/ball-009a49.png', 'images/ball-13acfa.png', 'images/ball-265897.png', 'images/ball-b6b4b5.png', 'images/ball-c0000b.png', 'images/ball-c9c9c9.png']);
+$.CTC22 = new Isolate.$isolateProperties._DeletedKeySentinel();
 $.CTC11 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC10, Isolate.$isolateProperties.CTC10, Isolate.$isolateProperties.CTC5]);
 $.CTC12 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC5]);
 $.CTC13 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8]);
@@ -5042,8 +5042,8 @@ $.CTC17 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC5, Isolate.$is
 $.CTC18 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC6, Isolate.$isolateProperties.CTC5, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC8, Isolate.$isolateProperties.CTC5]);
 $.CTC19 = Isolate.makeConstantList([Isolate.$isolateProperties.CTC7, Isolate.$isolateProperties.CTC9, Isolate.$isolateProperties.CTC11, Isolate.$isolateProperties.CTC12, Isolate.$isolateProperties.CTC13, Isolate.$isolateProperties.CTC14, Isolate.$isolateProperties.CTC15, Isolate.$isolateProperties.CTC16, Isolate.$isolateProperties.CTC17, Isolate.$isolateProperties.CTC18]);
 $.CTC21 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, 'Chrome|DumpRenderTree');
-$.CTC22 = new Isolate.$isolateProperties._DeletedKeySentinel();
 $.CTC4 = new Isolate.$isolateProperties.JSSyntaxRegExp(false, false, '^#[_a-zA-Z]\\w*$');
+$.CTC20 = Isolate.makeConstantList(['images2/ball-d9d9d9.png', 'images2/ball-009a49.png', 'images2/ball-13acfa.png', 'images2/ball-265897.png', 'images2/ball-b6b4b5.png', 'images2/ball-c0000b.png', 'images2/ball-c9c9c9.png']);
 $.CTC2 = new Isolate.$isolateProperties._SimpleClientRect(0, 0, 0, 0);
 $.CTC3 = new Isolate.$isolateProperties.EmptyElementRect(Isolate.$isolateProperties.CTC, Isolate.$isolateProperties.CTC2, Isolate.$isolateProperties.CTC2, Isolate.$isolateProperties.CTC2, Isolate.$isolateProperties.CTC2);
 $.CTC23 = new Isolate.$isolateProperties.Object();

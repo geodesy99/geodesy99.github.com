@@ -29,9 +29,9 @@ void showFps(num fps) {
 }
 
 class CountDownClock {
-  static final int NUMBER_SPACING = 19;
-  static final double BALL_WIDTH = 9.0;
-  static final double BALL_HEIGHT = 9.0;
+  static final int NUMBER_SPACING = 14;
+  static final double BALL_WIDTH = 25.0;
+  static final double BALL_HEIGHT = 25.0;
 
   List<ClockNumber> hours, minutes, seconds;
   Balls balls;

@@ -18,10 +18,10 @@ class Balls {
   static final int MD_GRAY_BALL_INDEX = 6;
 
   static final List<String> PNGS = const [
-      "images/ball-d9d9d9.png", "images/ball-009a49.png",
-      "images/ball-13acfa.png", "images/ball-265897.png",
-      "images/ball-b6b4b5.png", "images/ball-c0000b.png",
-      "images/ball-c9c9c9.png"
+      "images2/ball-d9d9d9.png", "images2/ball-009a49.png",
+      "images2/ball-13acfa.png", "images2/ball-265897.png",
+      "images2/ball-b6b4b5.png", "images2/ball-c0000b.png",
+      "images2/ball-c9c9c9.png"
   ];
 
   DivElement root;
@@ -115,7 +115,7 @@ class Ball {
   static final double RESTITUTION = 0.8;
   static final double MIN_VELOCITY = 100.0;
   static final double INIT_VELOCITY = 800.0;
-  static final double RADIUS = 14.0;
+  static final double RADIUS = 37.0;
 
   static double randomVelocity() {
     return (Math.random() - 0.5) * INIT_VELOCITY;
